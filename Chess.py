@@ -1,6 +1,6 @@
 import pygame
 
-#1.Draw
+
 
 pygame.init()
 ds = pygame.display.set_mode((1200, 800))
@@ -549,8 +549,8 @@ ws=[]
 bs=[]
 bpl=[]
 wq=["37"]
-bq=["40"]
-bk=["30"]
+bq=["30"]
+bk=["40"]
 wk=["47"]
 we=["07","77"]
 be=["00","70"]
@@ -620,11 +620,11 @@ z1.center=(350,750)
 wpl.append([z,z1,"q"])
 i=pygame.image.load("C:/Users/datta/OneDrive/Desktop/Images game/New folder/bking.png")
 i1=i.get_rect()
-i1.center=(350,50)
+i1.center=(450,50)
 bpl.append([i,i1,"k"])
 z=pygame.image.load("C:/Users/datta/OneDrive/Desktop/Images game/New folder/bqueen.png")
 z1=z.get_rect()
-z1.center=(450,50)
+z1.center=(350,50)
 bpl.append([z,z1,"q"])
 run = True
 white_pointer=-1

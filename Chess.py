@@ -675,10 +675,10 @@ while run:
             if "10" in bc+bh+bq+bh:
                 blcastlepossible=0
             if "20" in bc+bh+bq+bh:
-                blcastlepossible=0     
+                blcastlepossible=0
+            if "30" in bc+bh+bq+bh:
+                blcastlepossible=0      
         if brcastlepossible==1:
-            if "40" in bc+bh+bq+bh:
-                brcastlepossible=0
             if "50" in bc+bh+bq+bh:
                 brcastlepossible=0     
             if "60" in bc+bh+bq+bh:
@@ -707,9 +707,9 @@ while run:
                 blcastlepossible=0                                                                             
             if "30" in deer:
                 blcastlepossible=0
+            if "40" in deer:
+                blcastlepossible=0
         if brcastlepossible==1:
-            if "30" in deer:
-                brcastlepossible=0
             if "40" in deer:
                 brcastlepossible=0
             if "50" in deer:
@@ -1296,11 +1296,11 @@ while run:
                                             # Handle the case where crstr1 is not found in wsl
                                             print("Error: crstr1 not found in wsl.")
                                             continue  # Skip the rest of the loop  
-                                        wk[ind]="17"
-                                        lak[ind][1].center = fromcrtocenter("17")  
+                                        wk[ind]="27"
+                                        lak[ind][1].center = fromcrtocenter("27")  
                                         lak2=[i for i in wpl if i[2]=="e"]
-                                        we[0]="27"
-                                        lak2[0][1].center=fromcrtocenter("27")            
+                                        we[0]="37"
+                                        lak2[0][1].center=fromcrtocenter("37")            
                                     elif crstr2=="77":
                                         lak=[i for i in wpl if i[2]=="k"]
                                         try:
@@ -3140,13 +3140,12 @@ while run:
                                         # Handle the case where crstr1 is not found in wsl
                                         print("Error: crstr1 not found in wsl.")
                                         continue  # Skip the rest of the loop  
-                                    laka=[i for i in bpl if i[2]=="e"]
-                                    
+                                    laka=[i for i in bpl if i[2]=="e"]                                    
                                     if crstr2=="00":
-                                        bk[ind]="10"
-                                        lak[ind][1].center = fromcrtocenter("10")  
-                                        be[0]="20"
-                                        laka[0][1].center=fromcrtocenter("20")       
+                                        bk[ind]="20"
+                                        lak[ind][1].center = fromcrtocenter("20")  
+                                        be[0]="30"
+                                        laka[0][1].center=fromcrtocenter("30")       
                                     elif crstr2=="70":
                                         bk[ind]="60"
                                         lak[ind][1].center = fromcrtocenter("60")  
